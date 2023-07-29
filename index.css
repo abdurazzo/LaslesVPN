@@ -1,0 +1,315 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+  background: #0082e6;
+  width: 100%;
+  height: 80px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.logo {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/* header {
+  background: url("https://www.realmadrid.com/img/cc_1280px/marcelo-levanta-copa-ok_20230508101013.jpg")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 80vh;
+} */
+
+@media all and (max-width: 952px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 858px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.9s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover .active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+header {
+    width: 100%;
+    height: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 100px;
+}
+
+.tugma{
+
+    background: red;
+    color: #fff;
+
+    Width: 156px;
+    Height: 43px;
+    border-radius: 5px;
+}
+
+.left1{
+    text-align: center;
+}
+@media all and (max-width: 1184px) {
+    header{
+        flex-direction: column-reverse;
+        height: max-content;
+        padding: 40px 60px;
+    }
+}
+
+.ota {
+    width: 100%;
+    height: 200px;
+    padding:  100px;
+    gap: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media all and (max-width: 952px) {
+    .ota {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: max-content;
+        padding: 60px;
+      
+    }
+}
+@media all and (max-width: 474px) {
+    .ota {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: max-content;
+        padding: 30px;
+      
+    }
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card img {
+    width: 50px;
+}
+
+.center {
+    display: flex;
+    gap: 30px;
+}
+
+.left1 p {
+    padding: 25px 0;
+}
+.right2{
+    text-align: center;
+}
+
+.right2 p {
+    padding: 25px 0;
+}
+
+section{
+    width: 100%;
+    height: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 100px;
+}
+@media all and (max-width: 1184px) {
+    section{
+        flex-direction: column;
+        height: max-content;
+    }
+}
+
+
+
+.ff {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.dd {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left2 img,.right1 img{
+    width: 100%;
+}
+
+.boxota {
+    width: 100%;
+    height: max-content;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one {
+    width: 330px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+ 
+}
+
+.two {
+    width: 330px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.three {
+    width: 330px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.qq{
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.aa{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gps img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    background-color: #f8f8f8;
+    height: max-content;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+@media all and (max-width: 952px){
+    footer{
+        padding: 40px 60px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media all and (max-width: 600px){
+    footer{
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
